@@ -37,7 +37,7 @@ const MobileNav = ({user}: MobileNavProps) => {
                         height={34}
                         alt='SamuSpend Logo'>
                     </Image>
-                    <h1 className='sidebar-logo font-ibm-plex'>SamuSpend</h1>
+                    <h1 className='text-26 font-ibm-plex-serif font-bold text-black-1'>SamuSpend</h1>
                 </Link>
                 <div className='mobilenav-sheet'>
                     <SheetClose asChild>
