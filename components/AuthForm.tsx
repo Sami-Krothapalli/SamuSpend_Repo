@@ -33,6 +33,15 @@ const AuthForm = ({ type }: {type: string}) => {
 
             </div>
         </header>
+        {user ? (
+            <div>
+                {/* PLAID Add your form for linking account here */}
+            </div>
+        ): (
+            <>
+            FORM
+            </>
+        )}
     </section>
   )
 }
