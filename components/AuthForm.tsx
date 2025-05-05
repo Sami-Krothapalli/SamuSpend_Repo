@@ -3,6 +3,13 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Image from 'next/image'
 
+
+import {z} from 'zod'
+
+const formObject = z.object({
+    username: z.string().min(2).max(50),
+})
+
 const AuthForm = ({ type }: {type: string}) => {
     const [user, setUser] = useState(null)
   return (
