@@ -5,9 +5,13 @@ import Image from 'next/image'
 
 
 import {z} from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm } from 'react-hook-form'
 
 const formObject = z.object({
-    username: z.string().min(2).max(50),
+    username: z.string().min(2, {
+        message: 'Username must be at least 2 character long'
+    })
 })
 
 const AuthForm = ({ type }: {type: string}) => {
